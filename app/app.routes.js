@@ -9,17 +9,17 @@ app.config(['$routeProvider',
             .when('/coding', {
                 templateUrl: 'app/shared/templates/items.html',
                 controller: 'codingController',
-                controllerAs: 'coding'
+                controllerAs: 'Food'
             })
             .when('/experience', {
                 templateUrl: 'app/shared/templates/items.html',
                 controller: 'experienceController',
-                controllerAs: 'experience'
+                controllerAs: 'Recipes'
             })
             .when('/blog', {
                 templateUrl: 'app/shared/templates/items.html',
                 controller: 'blogController',
-                controllerAs: 'blog'
+                controllerAs: 'Blog'
             })
             .otherwise({
                 redirectTo: '/home'
