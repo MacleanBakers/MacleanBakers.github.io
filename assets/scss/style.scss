@@ -26,7 +26,7 @@ $blog-button-bg: $blog-color;
 
 $social-button-bg: #FFFFFF;
 $social-button: #AAAAAA;
-$github-color: #161415;
+$pinterest-color: #161415;
 $linkedin-color: #2C7AB3;
 $instagram-color: #BC2A8D;
 $email-color: #FFFFFF;
@@ -244,9 +244,9 @@ nav {
     flex-grow: 1;
     margin-right: 2rem;
 
-    &.github:hover {
+    &.pinterest:hover {
 
-      color: $github-color;
+      color: $pinterest-color;
     }
 
     &.linkedin:hover {
