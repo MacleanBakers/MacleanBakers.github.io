@@ -1,0 +1,20 @@
+/**
+ * Created by danny on 7/6/16.
+ */
+
+app.controller('codingController', function($scope, $http, $log) {
+
+    $scope.page = new Page('coding', {
+        url: 'https://api.github.com/users/dannymaclean98/repos',
+        itemName: 'project'
+    });
+
+    var ignored_repos = ["intro-to-linux"];
+
+    Project.all($http, $scope.page, function (projects) {
+        $scope.page.items = projects.exclude(function (value) {
+            return ignored_repos.contains(value.title);
+        });
+    });
+
+});
